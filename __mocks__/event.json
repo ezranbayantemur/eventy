@@ -1,0 +1,14 @@
+{
+  "Tur": "TİYATRO",
+  "Id": 1000,
+  "Adi": "TEST_NAME",
+  "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+  "KucukAfis": "TEST_POSTER",
+  "EtkinlikMerkezi": "TEST_LOCATION",
+  "KisaAciklama": "TEST_DESCRIPTION",
+  "BiletSatisLinki": "TEST_TICKET_LINK",
+  "UcretsizMi": true,
+  "Resim": "TEST_IMAGE",
+  "EtkinlikUrl": "TEST_URL_HEADER",
+  "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+}

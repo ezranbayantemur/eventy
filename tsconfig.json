@@ -4,7 +4,8 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@types": ["src/types"]
+      "@types": ["src/types"],
+      "@pages": ["src/pages"]
     }
   }
 }

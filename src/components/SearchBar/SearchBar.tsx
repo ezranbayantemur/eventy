@@ -1,21 +1,28 @@
 import {View, TextInput, type TextInputProps, Text} from 'react-native';
 import React from 'react';
 import styles from './SearchBar.style';
+import {useDebouncedCallback} from 'use-debounce';
 
 type ExcludedTextInputProps = Pick<TextInputProps, 'placeholder'>;
 
-interface SearchBarProps extends ExcludedTextInputProps {
+export interface SearchBarProps extends ExcludedTextInputProps {
   showIcon?: boolean;
   lineless?: boolean;
+  debounce?: number;
   onSearch: (value: string) => void;
 }
 
 function SearchBar({
   showIcon = true,
   lineless = false,
+  debounce = 250,
   onSearch,
   placeholder,
 }: SearchBarProps) {
+  const debounced = useDebouncedCallback(value => {
+    onSearch(value);
+  }, debounce);
+
   return (
     <View
       testID="searchbar-container"
@@ -29,7 +36,7 @@ function SearchBar({
         testID="searchbar-input"
         style={styles.input}
         placeholder={placeholder || 'Search...'}
-        onChangeText={onSearch}
+        onChangeText={debounced}
       />
     </View>
   );

@@ -11,6 +11,7 @@ export default StyleSheet.create({
     borderBottomWidth: 1,
   },
   input: {
+    flex: 1,
     fontSize: 17,
   },
   icon: {

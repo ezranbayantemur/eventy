@@ -20,7 +20,7 @@ function SearchBar({
   placeholder,
 }: SearchBarProps) {
   const debounced = useDebouncedCallback(value => {
-    onSearch(value);
+    !!onSearch && onSearch(value);
   }, debounce);
 
   return (

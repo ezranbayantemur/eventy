@@ -22,7 +22,7 @@ export default StyleSheet.create({
   name: {
     marginTop: 5,
   },
-  freebadge_container: {
+  free_badge_container: {
     position: 'absolute',
     top: '10%',
     left: -3,
@@ -32,7 +32,21 @@ export default StyleSheet.create({
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
   },
-  freebadge_title: {
+  free_badge_title: {
+    color: '#FFF',
+    fontWeight: 'bold',
+  },
+  genre_badge_container: {
+    position: 'absolute',
+    bottom: '20%',
+    right: -3,
+    backgroundColor: '#8E24AA',
+    padding: 3,
+    paddingHorizontal: 10,
+    borderTopLeftRadius: 5,
+    borderBottomLeftRadius: 5,
+  },
+  genre_badge_title: {
     color: '#FFF',
     fontWeight: 'bold',
   },

@@ -31,4 +31,12 @@ describe('EventCard unit tests', () => {
 
     expect(badge).toBeNull();
   });
+
+  it('should render genre badge', () => {
+    const wrapper = render(<EventCard data={mockData} onSelect={jest.fn} />);
+    const genre = wrapper.queryByTestId('eventcard-genre-badge-title')
+      ?.children[0];
+
+    expect(genre).toBe(mockData.Tur);
+  });
 });

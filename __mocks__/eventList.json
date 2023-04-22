@@ -1,0 +1,72 @@
+[
+  {
+    "Tur": "TİYATRO",
+    "Id": 5001,
+    "Adi": "EVENT_NAME_1",
+    "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+    "KucukAfis": "https://via.placeholder.com/150",
+    "EtkinlikMerkezi": "EVENT_LOCATION_1",
+    "KisaAciklama": "Ipsum minim nostrud nulla ipsum deserunt sint sint aliqua do veniam mollit mollit. Excepteur enim irure in qui proident velit deserunt in aute consequat officia veniam ut. Consequat officia ea eu esse esse aute nisi laboris occaecat et ex.",
+    "BiletSatisLinki": "https://www.google.com",
+    "UcretsizMi": true,
+    "Resim": "https://via.placeholder.com/150",
+    "EtkinlikUrl": "TEST_URL_HEADER",
+    "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+  },
+  {
+    "Tur": "KONSER",
+    "Id": 5002,
+    "Adi": "EVENT_NAME_2",
+    "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+    "KucukAfis": "https://via.placeholder.com/150",
+    "EtkinlikMerkezi": "EVENT_LOCATION_2",
+    "KisaAciklama": "Ipsum minim nostrud nulla ipsum deserunt sint sint aliqua do veniam mollit mollit. Excepteur enim irure in qui proident velit deserunt in aute consequat officia veniam ut. Consequat officia ea eu esse esse aute nisi laboris occaecat et ex.",
+    "BiletSatisLinki": "https://www.google.com",
+    "UcretsizMi": false,
+    "Resim": "https://via.placeholder.com/150",
+    "EtkinlikUrl": "TEST_URL_HEADER",
+    "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+  },
+  {
+    "Tur": "DİĞER",
+    "Id": 5003,
+    "Adi": "EVENT_NAME_3",
+    "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+    "KucukAfis": "https://via.placeholder.com/150",
+    "EtkinlikMerkezi": "EVENT_LOCATION_3",
+    "KisaAciklama": "Ipsum minim nostrud nulla ipsum deserunt sint sint aliqua do veniam mollit mollit. Excepteur enim irure in qui proident velit deserunt in aute consequat officia veniam ut. Consequat officia ea eu esse esse aute nisi laboris occaecat et ex.",
+    "BiletSatisLinki": "https://www.google.com",
+    "UcretsizMi": true,
+    "Resim": "https://via.placeholder.com/150",
+    "EtkinlikUrl": "TEST_URL_HEADER",
+    "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+  },
+  {
+    "Tur": "SİNEMA",
+    "Id": 5004,
+    "Adi": "EVENT_NAME_4",
+    "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+    "KucukAfis": "https://via.placeholder.com/150",
+    "EtkinlikMerkezi": "EVENT_LOCATION_4",
+    "KisaAciklama": "Ipsum minim nostrud nulla ipsum deserunt sint sint aliqua do veniam mollit mollit. Excepteur enim irure in qui proident velit deserunt in aute consequat officia veniam ut. Consequat officia ea eu esse esse aute nisi laboris occaecat et ex.",
+    "BiletSatisLinki": "https://www.google.com",
+    "UcretsizMi": false,
+    "Resim": "https://via.placeholder.com/150",
+    "EtkinlikUrl": "TEST_URL_HEADER",
+    "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+  },
+  {
+    "Tur": "SERGİ",
+    "Id": 5005,
+    "Adi": "EVENT_NAME_5",
+    "EtkinlikBitisTarihi": "2023-04-23T12:00:00",
+    "KucukAfis": "https://via.placeholder.com/150",
+    "EtkinlikMerkezi": "EVENT_LOCATION_5",
+    "KisaAciklama": "Ipsum minim nostrud nulla ipsum deserunt sint sint aliqua do veniam mollit mollit. Excepteur enim irure in qui proident velit deserunt in aute consequat officia veniam ut. Consequat officia ea eu esse esse aute nisi laboris occaecat et ex.",
+    "BiletSatisLinki": "https://www.google.com",
+    "UcretsizMi": false,
+    "Resim": "https://via.placeholder.com/150",
+    "EtkinlikUrl": "TEST_URL_HEADER",
+    "EtkinlikBaslamaTarihi": "2023-04-23T10:00:00"
+  }
+]

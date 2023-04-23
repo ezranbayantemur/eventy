@@ -14,9 +14,11 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
+    "@reduxjs/toolkit": "^1.9.5",
     "react": "18.2.0",
     "react-native": "0.71.6",
     "react-native-screens": "^3.20.0",
+    "react-redux": "^8.0.5",
     "use-debounce": "^9.0.4"
   },
   "devDependencies": {

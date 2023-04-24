@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@types": ["src/types"],
-      "@pages": ["src/pages"]
+      "@pages": ["src/pages"],
+      "@components": ["src/components"],
+      "@redux/*": ["src/redux/*"]
     }
   }
 }

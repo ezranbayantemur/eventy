@@ -48,7 +48,9 @@ try {
 const getStories = () => {
   return {
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),
+    "./src/components/Error/Error.stories.tsx": require("../src/components/Error/Error.stories.tsx"),
     "./src/components/EventCard/EventCard.stories.tsx": require("../src/components/EventCard/EventCard.stories.tsx"),
+    "./src/components/Loading/Loading.stories.tsx": require("../src/components/Loading/Loading.stories.tsx"),
     "./src/components/SearchBar/SearchBar.stories.tsx": require("../src/components/SearchBar/SearchBar.stories.tsx"),
   };
 };

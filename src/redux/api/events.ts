@@ -7,7 +7,7 @@ export const eventsApi = createApi({
     baseUrl: 'https://openapi.izmir.bel.tr/api/ibb',
   }),
   endpoints: builder => ({
-    getEvents: builder.query<Event[], string>({
+    getEvents: builder.query<Event[], void>({
       query: () => '/kultursanat/etkinlikler',
     }),
   }),

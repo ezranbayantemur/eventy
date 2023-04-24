@@ -7,6 +7,8 @@ module.exports = {
         alias: {
           '@types': './src/types',
           '@pages': './src/pages',
+          '@components': './src/components',
+          '@redux': './src/redux',
         },
       },
     ],

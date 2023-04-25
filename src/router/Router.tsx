@@ -8,7 +8,13 @@ const Stack = createNativeStackNavigator();
 function Router() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+          contentStyle: {
+            backgroundColor: 'white',
+          },
+        }}>
         <Stack.Screen name="Event" component={Events} />
         <Stack.Screen name="EventDetail" component={EventDetail} />
       </Stack.Navigator>

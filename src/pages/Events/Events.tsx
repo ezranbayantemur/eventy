@@ -1,17 +1,31 @@
 import React from 'react';
 import {SafeAreaView, FlatList, type ListRenderItem} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 import {Event} from '@types';
-import {EventCard, Loading, Error} from '@components';
+import {EventCard, Loading, Error, SearchBar} from '@components';
 import {useGetEventsQuery} from '@redux/api/events';
 
 export default function Events() {
+  const navigation = useNavigation<any>();
   const {data, error, isLoading, refetch} = useGetEventsQuery();
+  const [eventList, setEventList] = React.useState<Event[] | undefined>();
 
-  const handleEventSelect = () => null;
+  React.useEffect(() => {
+    setEventList(data);
+  }, [data]);
+
+  const handleEventSelect = () => navigation.navigate('EventDetail');
 
   const renderEvent: ListRenderItem<Event> = ({item}) => (
     <EventCard data={item} onSelect={handleEventSelect} />
   );
+
+  const handleSearch = (text: string) => {
+    const filteredEvents = data?.filter(event =>
+      event.Adi.toLowerCase().includes(text.toLowerCase()),
+    );
+    setEventList(filteredEvents);
+  };
 
   if (isLoading) {
     return <Loading text="Etkinlikler yükleniyor.." />;
@@ -23,10 +37,11 @@ export default function Events() {
   return (
     <SafeAreaView>
       <FlatList
-        data={data}
+        data={eventList}
         renderItem={renderEvent}
         refreshing={isLoading}
         onRefresh={refetch}
+        ListHeaderComponent={<SearchBar onSearch={handleSearch} />}
       />
     </SafeAreaView>
   );

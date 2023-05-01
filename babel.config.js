@@ -9,6 +9,7 @@ module.exports = {
           '@pages': './src/pages',
           '@components': './src/components',
           '@redux': './src/redux',
+          '@utils': './src/utils',
         },
       },
     ],

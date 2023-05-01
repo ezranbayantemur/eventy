@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Alert} from 'react-native';
 import {Session} from '@types';
-import {format, isSameDay} from 'date-fns';
+import {format, isSameDay, parseISO} from 'date-fns';
 import RNCalendarEvents from 'react-native-calendar-events';
 
 import styles from './SessionCard.style';
@@ -44,8 +44,8 @@ function SessionCard({eventName, data}: SessionCardProps) {
     if (permissionStatus === 'authorized') {
       try {
         await RNCalendarEvents.saveEvent(eventName, {
-          startDate: `${data.SeansBaslangicTarihi}.000Z`,
-          endDate: `${data.SeansBitisTarihi}.000Z`,
+          startDate: parseISO(data.SeansBaslangicTarihi).toISOString(),
+          endDate: parseISO(data.SeansBitisTarihi).toISOString(),
         });
         Alert.alert('eventy', 'Etkinlik takviminize eklendi.');
       } catch (error) {

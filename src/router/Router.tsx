@@ -10,13 +10,26 @@ function Router() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: false,
           contentStyle: {
             backgroundColor: 'white',
           },
         }}>
-        <Stack.Screen name="Event" component={Events} />
-        <Stack.Screen name="EventDetail" component={EventDetail} />
+        <Stack.Screen
+          name="Event"
+          component={Events}
+          options={{
+            title: 'event',
+            headerTintColor: '#00BCD4',
+          }}
+        />
+        <Stack.Screen
+          name="EventDetail"
+          component={EventDetail}
+          options={{
+            headerTintColor: '#00BCD4',
+            headerBackVisible: false,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

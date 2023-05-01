@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   Text,
@@ -7,7 +7,7 @@ import {
   ScrollView,
   Linking,
 } from 'react-native';
-import {useRoute} from '@react-navigation/native';
+import {useRoute, useNavigation} from '@react-navigation/native';
 import AutoHeightWebView from 'react-native-autoheight-webview';
 import {useGetEventDetailQuery} from '@redux/api/events';
 import {
@@ -23,10 +23,17 @@ import styles from './EventDetail.style';
 const baseEventURL = 'https://kultursanat.izmir.bel.tr/Etkinlikler/';
 
 export default function EventDetail() {
+  const navigation = useNavigation();
   const route = useRoute<any>();
   const {data, error, isLoading} = useGetEventDetailQuery({
     id: route.params.Id,
   });
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerTitle: data?.Adi || '',
+    });
+  }, [navigation, data?.Adi]);
 
   if (isLoading) {
     return <Loading text="Etkinlik detayı yükleniyor.." />;

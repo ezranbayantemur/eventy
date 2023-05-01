@@ -35,7 +35,9 @@ export const WithList: StoryObj<SessionCardProps> = {
         <FlatList
           keyExtractor={item => item.BiletSatisAciklama}
           data={mockSessionList}
-          renderItem={({item}) => <SessionCard data={item} />}
+          renderItem={({item}) => (
+            <SessionCard eventName="Storbook Etkinliği" data={item} />
+          )}
         />
       </View>
     ),

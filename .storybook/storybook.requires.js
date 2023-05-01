@@ -53,6 +53,7 @@ const getStories = () => {
     "./src/components/EventDetailField/EventDetailField.stories.tsx": require("../src/components/EventDetailField/EventDetailField.stories.tsx"),
     "./src/components/Loading/Loading.stories.tsx": require("../src/components/Loading/Loading.stories.tsx"),
     "./src/components/SearchBar/SearchBar.stories.tsx": require("../src/components/SearchBar/SearchBar.stories.tsx"),
+    "./src/components/SessionCard/SessionCard.stories.tsx": require("../src/components/SessionCard/SessionCard.stories.tsx"),
   };
 };
 

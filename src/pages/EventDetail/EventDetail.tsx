@@ -10,7 +10,13 @@ import {
 import {useRoute} from '@react-navigation/native';
 import AutoHeightWebView from 'react-native-autoheight-webview';
 import {useGetEventDetailQuery} from '@redux/api/events';
-import {Loading, Error, Button, EventDetailField} from '@components';
+import {
+  Loading,
+  Error,
+  Button,
+  EventDetailField,
+  SessionCard,
+} from '@components';
 import {checkContentIsValid, openEventLocation} from '@utils';
 import styles from './EventDetail.style';
 
@@ -39,7 +45,6 @@ export default function EventDetail() {
 
   const handleOpenExternalLink = async () => {
     const url = baseEventURL + data.EtkinlikUrl;
-
     const canOpen = await Linking.canOpenURL(url);
 
     if (canOpen) {
@@ -55,6 +60,7 @@ export default function EventDetail() {
   const hasEventPlaceContact = checkContentIsValid(Iletisim);
   const hasEventPlaceAddress = checkContentIsValid(Adres);
   const hasEventPlaceCoordinates = KoordinatX && KoordinatY;
+  const hasSessions = data.SeansListesi.length > 0;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -77,6 +83,14 @@ export default function EventDetail() {
           viewportContent="width=device-width, user-scalable=no"
           source={{html: data.Aciklama}}
         />
+        {hasSessions &&
+          data.SeansListesi.map(session => (
+            <SessionCard
+              key={session.BiletSatisAciklama}
+              eventName={data.Adi}
+              data={session}
+            />
+          ))}
         {hasEventPlaceInfo && (
           <EventDetailField
             label={`Etkinlik Yeri: ${data.EtkinlikMerkezi.Adi}`}

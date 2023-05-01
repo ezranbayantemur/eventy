@@ -15,6 +15,7 @@
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "@reduxjs/toolkit": "^1.9.5",
+    "date-fns": "^2.30.0",
     "react": "18.2.0",
     "react-native": "0.71.6",
     "react-native-autoheight-webview": "^1.6.5",

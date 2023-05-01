@@ -19,7 +19,7 @@ export interface Session {
   BiletSatisAciklama: string;
   SeansBitisTarihi: string;
   UcretsizMi: boolean;
-  BiletSatisLinki: string;
+  BiletSatisLinki: string | null;
   SatisaSunusTarihi: string;
   SeansBaslangicTarihi: string;
 }

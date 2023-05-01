@@ -14,10 +14,11 @@ export default function Events() {
     setEventList(data);
   }, [data]);
 
-  const handleEventSelect = () => navigation.navigate('EventDetail');
+  const handleEventSelect = (Id: number) =>
+    navigation.navigate('EventDetail', {Id});
 
   const renderEvent: ListRenderItem<Event> = ({item}) => (
-    <EventCard data={item} onSelect={handleEventSelect} />
+    <EventCard data={item} onSelect={() => handleEventSelect(item.Id)} />
   );
 
   const handleSearch = (text: string) => {

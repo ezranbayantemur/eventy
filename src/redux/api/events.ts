@@ -1,5 +1,9 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
-import type {Event} from '@types';
+import type {Event, EventDetail} from '@types';
+
+type GetEventDetailArg = {
+  id: number;
+};
 
 export const eventsApi = createApi({
   reducerPath: 'eventsApi',
@@ -8,9 +12,12 @@ export const eventsApi = createApi({
   }),
   endpoints: builder => ({
     getEvents: builder.query<Event[], void>({
-      query: () => '/kultursanat/etkinlikler',
+      query: () => '/kultursanat/etkinlikler/',
+    }),
+    getEventDetail: builder.query<EventDetail, GetEventDetailArg>({
+      query: ({id}) => '/kultursanat/etkinlikler/' + id,
     }),
   }),
 });
 
-export const {useGetEventsQuery} = eventsApi;
+export const {useGetEventsQuery, useGetEventDetailQuery} = eventsApi;

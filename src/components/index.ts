@@ -3,5 +3,6 @@ import Button from './Button';
 import Loading from './Loading';
 import EventCard from './EventCard';
 import SearchBar from './SearchBar';
+import EventDetailField from './EventDetailField';
 
-export {Button, EventCard, SearchBar, Loading, Error};
+export {Button, EventCard, SearchBar, EventDetailField, Loading, Error};

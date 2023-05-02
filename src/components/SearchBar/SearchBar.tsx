@@ -35,7 +35,7 @@ function SearchBar({
       <TextInput
         testID="searchbar-input"
         style={styles.input}
-        placeholder={placeholder || 'Search...'}
+        placeholder={placeholder || 'Ara...'}
         onChangeText={debounced}
       />
     </View>

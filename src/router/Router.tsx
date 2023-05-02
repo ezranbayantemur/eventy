@@ -18,7 +18,7 @@ function Router() {
           name="Event"
           component={Events}
           options={{
-            title: 'event',
+            title: 'eventy',
             headerTintColor: '#00BCD4',
           }}
         />

@@ -1,27 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681999003282" clover="3.2.0">
-  <project timestamp="1681999003282" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3" elements="17" coveredelements="17" complexity="0" loc="4" ncloc="4" packages="2" files="4" classes="4"/>
-    <package name="EventCard">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+<coverage generated="1683062811699" clover="3.2.0">
+  <project timestamp="1683062811699" name="All files">
+    <metrics statements="54" coveredstatements="50" conditionals="46" coveredconditionals="39" methods="15" coveredmethods="14" elements="115" coveredelements="103" complexity="0" loc="54" ncloc="54" packages="10" files="17" classes="17"/>
+    <package name="components.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Button.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Button/Button.style.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Button.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Button/Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Error">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Error.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Error/Error.style.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Error.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Error/Error.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.EventCard">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="EventCard.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/EventCard/EventCard.style.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="EventCard.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/EventCard/EventCard.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="SearchBar">
-      <metrics statements="1" coveredstatements="1" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+    <package name="components.EventDetailField">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="EventDetailField.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/EventDetailField/EventDetailField.style.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="EventDetailField.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/EventDetailField/EventDetailField.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Loading">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Loading.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Loading/Loading.style.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Loading.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/Loading/Loading.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.SearchBar">
+      <metrics statements="3" coveredstatements="2" conditionals="11" coveredconditionals="9" methods="2" coveredmethods="1"/>
       <file name="SearchBar.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/SearchBar/SearchBar.style.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="SearchBar.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/SearchBar/SearchBar.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
-        <line num="19" count="5" type="stmt"/>
+        <metrics statements="3" coveredstatements="2" conditionals="11" coveredconditionals="9" methods="2" coveredmethods="1"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.SessionCard">
+      <metrics statements="19" coveredstatements="16" conditionals="16" coveredconditionals="11" methods="2" coveredmethods="2"/>
+      <file name="SessionCard.style.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/components/SessionCard/SessionCard.style.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="SessionCard.tsx" path="/Users/ezranbayantemur/Desktop/eventy/src/components/SessionCard/SessionCard.tsx">
+        <metrics statements="19" coveredstatements="16" conditionals="16" coveredconditionals="11" methods="2" coveredmethods="2"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.checkContentIsValid">
+      <metrics statements="5" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <file name="checkContentIsValid.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/utils/checkContentIsValid/checkContentIsValid.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.openEventLocation">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="openEventLocation.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/utils/openEventLocation/openEventLocation.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.turkishCharParser">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="turkishCharParser.ts" path="/Users/ezranbayantemur/Desktop/eventy/src/utils/turkishCharParser/turkishCharParser.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="16" count="87" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
   </project>

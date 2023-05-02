@@ -17,16 +17,16 @@ describe('EventCard unit tests', () => {
   });
 
   it('should render free badge when event is free', () => {
-    const wrapper = render(<EventCard data={mockData} onSelect={jest.fn} />);
+    const wrapper = render(
+      <EventCard data={{...mockData, UcretsizMi: true}} onSelect={jest.fn} />,
+    );
     const badge = wrapper.queryByTestId('eventcard-free-badge');
 
     expect(badge).not.toBeNull();
   });
 
   it('should not render free badge when event is not free', () => {
-    const wrapper = render(
-      <EventCard data={{...mockData, UcretsizMi: false}} onSelect={jest.fn} />,
-    );
+    const wrapper = render(<EventCard data={mockData} onSelect={jest.fn} />);
     const badge = wrapper.queryByTestId('eventcard-free-badge');
 
     expect(badge).toBeNull();

@@ -18,6 +18,15 @@
     "SeansBaslangicTarihi": "2023-05-05T20:00:00"
   },
   {
+    "DolulukOranı": 50,
+    "BiletSatisAciklama": "5.7.2023 20:00",
+    "SeansBitisTarihi": "2023-05-07T22:00:00",
+    "UcretsizMi": false,
+    "BiletSatisLinki": null,
+    "SatisaSunusTarihi": "2023-04-18T15:00:00",
+    "SeansBaslangicTarihi": "2023-05-05T20:00:00"
+  },
+  {
     "DolulukOranı": 35,
     "BiletSatisAciklama": "6.5.2023 20:00",
     "SeansBitisTarihi": "2023-05-06T22:00:00",
@@ -30,6 +39,15 @@
     "DolulukOranı": 100,
     "BiletSatisAciklama": "7.5.2023 20:00",
     "SeansBitisTarihi": "2023-05-07T22:00:00",
+    "UcretsizMi": false,
+    "BiletSatisLinki": null,
+    "SatisaSunusTarihi": "2023-04-18T15:00:00",
+    "SeansBaslangicTarihi": "2023-05-07T20:00:00"
+  },
+  {
+    "DolulukOranı": 100,
+    "BiletSatisAciklama": "9.5.2023 20:00",
+    "SeansBitisTarihi": "2023-05-09T22:00:00",
     "UcretsizMi": false,
     "BiletSatisLinki": null,
     "SatisaSunusTarihi": "2023-04-18T15:00:00",

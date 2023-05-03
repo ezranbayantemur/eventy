@@ -12,6 +12,6 @@ export default StyleSheet.create({
   },
   text: {
     color: '#FFF',
-    fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
   },
 });

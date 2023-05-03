@@ -12,6 +12,6 @@ export default StyleSheet.create({
   text: {
     marginTop: 20,
     color: '#000',
-    fontWeight: 'bold',
+    fontFamily: 'Montserrat-Regular',
   },
 });

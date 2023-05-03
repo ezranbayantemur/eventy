@@ -11,7 +11,7 @@ export default StyleSheet.create({
     margin: 10,
     marginBottom: 0,
     fontSize: 17,
-    fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
   },
   label_container: {
     paddingBottom: 3,

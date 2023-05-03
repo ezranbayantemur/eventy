@@ -16,13 +16,16 @@ export default StyleSheet.create({
   },
   event_name: {
     margin: 10,
+    marginLeft: 5,
     fontSize: 20,
     fontWeight: 'bold',
+    fontFamily: 'Montserrat-Regular',
   },
   event_place_name: {
     margin: 10,
     fontSize: 17,
     fontWeight: 'bold',
+    fontFamily: 'Montserrat-Regular',
   },
   event_info: {
     width: width - 20,

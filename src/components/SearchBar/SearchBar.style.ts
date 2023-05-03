@@ -13,6 +13,7 @@ export default StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 17,
+    fontFamily: 'Montserrat-Regular',
   },
   icon: {
     marginRight: 10,

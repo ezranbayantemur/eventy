@@ -25,17 +25,17 @@ export default {
     },
     day_label: {
       color: '#FFF',
-      fontWeight: 'bold',
       fontSize: 16,
+      fontFamily: 'Montserrat-Regular',
     },
     time_label: {
       color: '#FFF',
-      fontWeight: 'bold',
+      fontFamily: 'Montserrat-Bold',
     },
     sell_start_label: {
       color: '#FFF',
-      fontWeight: 'bold',
       fontSize: 12,
+      fontFamily: 'Montserrat-Regular',
     },
     add_to_calendar_button_container: {
       marginTop: 3,
@@ -46,7 +46,7 @@ export default {
     },
     add_to_calendar_button_text: {
       color: '#00BCD4',
-      fontWeight: 'bold',
+      fontFamily: 'Montserrat-Bold',
     },
     right_container: {
       alignItems: 'center',
@@ -77,15 +77,15 @@ export default {
     day_label: {
       color: '#E8E6E6',
       fontWeight: 'bold',
-      fontSize: 16,
+      fontFamily: 'Montserrat-Regular',
     },
     time_label: {
       color: '#E8E6E6',
-      fontWeight: 'bold',
+      fontFamily: 'Montserrat-Bold',
     },
     sell_start_label: {
       color: '#E8E6E6',
-      fontWeight: 'bold',
+      fontFamily: 'Montserrat-Regular',
       fontSize: 12,
     },
     add_to_calendar_button_container: {
@@ -97,7 +97,7 @@ export default {
     },
     add_to_calendar_button_text: {
       color: '#CCCACA',
-      fontWeight: 'bold',
+      fontFamily: 'Montserrat-Bold',
     },
     right_container: {
       alignItems: 'center',

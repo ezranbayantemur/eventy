@@ -13,6 +13,9 @@ function Router() {
           contentStyle: {
             backgroundColor: 'white',
           },
+          headerTitleStyle: {
+            fontFamily: 'Montserrat-Regular',
+          },
         }}>
         <Stack.Screen
           name="Event"

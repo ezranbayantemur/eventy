@@ -20,7 +20,9 @@ export default StyleSheet.create({
     borderRadius: 5,
   },
   name: {
+    fontFamily: 'Montserrat-Bold',
     marginTop: 5,
+    fontSize: 16,
   },
   free_badge_container: {
     position: 'absolute',
@@ -35,6 +37,7 @@ export default StyleSheet.create({
   free_badge_title: {
     color: '#FFF',
     fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
   },
   genre_badge_container: {
     position: 'absolute',
@@ -49,5 +52,6 @@ export default StyleSheet.create({
   genre_badge_title: {
     color: '#FFF',
     fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
   },
 });
